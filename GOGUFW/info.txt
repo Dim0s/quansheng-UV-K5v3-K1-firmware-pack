@@ -1,3 +1,4 @@
 прошивка с мессенджером
 
+репозиторий автора:
 https://github.com/Gogu-Qs/GOGUFW-UV-K1-Messenger

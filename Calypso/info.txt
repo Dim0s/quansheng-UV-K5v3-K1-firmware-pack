@@ -1,4 +1,5 @@
 описание прошивки частично подходит от F4HWN
 
-репозиторий автора:
+репозиторий авторов:
 https://github.com/mentanah/uv-k1-k5v3-firmware-custom
+https://github.com/igimalek/uv-k1-k5v3-calypso

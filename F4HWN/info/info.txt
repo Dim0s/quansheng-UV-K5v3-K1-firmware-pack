@@ -1,5 +1,8 @@
 некоторая информация в PDF устарела
 
+авторский онлайн прошивальщик и загрузчик логотипа
+https://armel.github.io/uvtools2/
+
 репозиторий автора:
 https://github.com/armel/uv-k1-k5v3-firmware-custom
 

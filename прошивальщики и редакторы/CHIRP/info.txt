@@ -3,5 +3,7 @@
 Chirp_NexT_Win7x64.zip - для Windows 7
 chirp-next-20250815-installer_Win10.zip - для Windows 10
 
+LPD PMR.csv содержит только частоты всех каналов LPD и PMR, для копипасты
+
 тема на форуме:
 https://4pda.to/forum/index.php?showtopic=1108105

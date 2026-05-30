@@ -15,3 +15,6 @@
 
 сайт автора:
 https://www.ijvradio.com/
+
+сайт заливки SATCOM каналов:
+https://satview.ru/IJV/

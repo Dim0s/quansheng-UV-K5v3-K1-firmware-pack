@@ -1,11 +1,14 @@
-﻿всегда свежее описание прошивка на Wiki автора:
+﻿всегда свежее описание прошивки на Wiki автора, но на инглише:
 https://github.com/armel/uv-k1-k5v3-firmware-custom/wiki
 
-авторский онлайн прошивальщик (и загрузчик логотипа для прошивки 5.5.0+)
-https://armel.github.io/uvtools2/
+логи изменений слишком толстые и на инглише, смотреть в репе автора:
+https://github.com/armel/uv-k1-k5v3-firmware-custom/releases
 
 репозиторий автора:
 https://github.com/armel/uv-k1-k5v3-firmware-custom
+
+авторский онлайн прошивальщик (и загрузчик логотипа для прошивки 5.5.0+)
+https://armel.github.io/uvtools2/
 
 ютуб канал автора:
 https://www.youtube.com/@f4hwn

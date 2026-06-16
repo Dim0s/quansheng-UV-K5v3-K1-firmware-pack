@@ -13,5 +13,8 @@ https://github.com/armel/uv-k1-k5v3-firmware-custom
 авторский онлайн прошивальщик (и загрузчик логотипа для прошивки 5.5.0+)
 https://armel.github.io/uvtools2/
 
+авторский онлайн просмотрщик экрана рации и удалённое управление
+https://armel.github.io/k5viewer/
+
 ютуб канал автора:
 https://www.youtube.com/@f4hwn

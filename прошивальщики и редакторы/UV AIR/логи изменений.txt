@@ -1,4 +1,7 @@
-UV_AIR_3.2.3
+UV_AIR_3.3.0 (AIR_TOOL)
+добавлена поддержка блютуз шитья для Radtel
+
+UV_AIR_3.2.3 (AIR_TOOL)
 допил поддержки Radtel 950 PRO
 
 UV_AIR_3.2.1

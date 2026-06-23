@@ -1,0 +1,24 @@
+из особенностей:
+1. FM AM DSB RAW BYP USB
+2. уникальные звуки Roger
+3. назначение боковых клавиш на раздельный TX a или TX b
+4. чат с запилом под Mesh-сеть с шифрованием, пока вообще сыро, не рекомендуется шить ради этого
+
+
+в прошивке deltafw.dev.v1.7.2.d278bf9.28022026 пропало меню меш состовляющей...
+
+
+репозиторий автора:
+https://github.com/qshosfw/deltafw-k1-k5v3
+
+прошивальщик автора:
+https://qshosfw.github.io/squelch/
+
+описание протокола Mesh-сети
+https://qshosfw.github.io/hermes/docs/rfc/01-introduction/
+
+работа с пакетами Mesh-сети
+https://qshosfw.github.io/hermes/packet-builder/
+
+Mesh симулятор
+https://qshosfw.github.io/hermes/simulator/

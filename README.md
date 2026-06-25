@@ -1,5 +1,18 @@
 <h1 align="center">СОХРАНИ КАЛИБРОВКИ ПЕРЕД ПРОШИВКОЙ !!!</h1>
 
+### прошивки с лучшим спектроанализатором:
+1. [Karina](https://github.com/Dim0s/quansheng-UV-K5v3-K1-firmware-pack/tree/main/Karina) - самый быстрый, несколько бендов одновременно, весь диапазон выбранных бендов на одном экране
+2. [KA50](https://github.com/Dim0s/quansheng-UV-K5v3-K1-firmware-pack/tree/main/KA50) / [KA52](https://github.com/Dim0s/quansheng-UV-K5v3-K1-firmware-pack/tree/main/KA52) - быстрый, несколько бендов одновременно, бенды переключаются 1 за другим
+3. [IJV](https://github.com/Dim0s/quansheng-UV-K5v3-K1-firmware-pack/tree/main/IJV) - быстрый, 1 любой бенд, ну или не нашёл как сканировать несколько (в бесплатной версии)
+4. [F4HWN](https://github.com/Dim0s/quansheng-UV-K5v3-K1-firmware-pack/tree/main/F4HWN) - средний, бендов нет
+5. [N7SIX](https://github.com/Dim0s/quansheng-UV-K5v3-K1-firmware-pack/tree/main/N7SIX) - медленный, есть водопад, бендов нет
+
+### прошивки с лучшим мессенджером:
+1. [GOGU](https://github.com/Dim0s/quansheng-UV-K5v3-K1-firmware-pack/tree/main/GOGU) - удобный, юзерфрендли, FSK, ACK (первое место за то что сделан на базе последнего F4HWN и работает быстро)
+2. [PrepperRadio](https://github.com/Dim0s/quansheng-UV-K5v3-K1-firmware-pack/tree/main/PrepperRadio) - сложноват, медленноват, FSK 1.2 / FSK .6 / FSK 2.4 / FFSK 1.2, ACK, отправка сообщений через авторский софт прям с компа, очень удобно
+3. [Delta](https://github.com/Dim0s/quansheng-UV-K5v3-K1-firmware-pack/tree/main/Delta) - будущая Mesh-сеть с шифрованием, сложность максимальная, пока не работает
+4. [IJV](https://github.com/Dim0s/quansheng-UV-K5v3-K1-firmware-pack/tree/main/IJV) - в платной версии вроде есть чат, но сам не тестил и не знаком с его степенью крутоты, из за чего пока последнее место
+
 <div align="center">
 
 ### в топике про рации на [4pda](https://4pda.to/forum/index.php?showtopic=1071343) из за ряда причин развитие темы остановилось

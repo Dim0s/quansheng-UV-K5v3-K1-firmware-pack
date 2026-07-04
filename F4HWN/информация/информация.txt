@@ -25,3 +25,8 @@ https://armel.github.io/k5viewer/
 
 ютуб канал автора:
 https://www.youtube.com/@f4hwn
+
+
+заметил следующие баги:
+
+1. Reset All зачищает память в области калибровок

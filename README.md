@@ -18,7 +18,8 @@
 
 ### прошивки с поддержкой модуля SI4732:
 1. [IOTCU](https://github.com/Dim0s/quansheng-UV-K5v3-K1-firmware-pack/tree/main/IOTCU) - сделано на базе последнего F4HWN
-2. [IJV](https://github.com/Dim0s/quansheng-UV-K5v3-K1-firmware-pack/tree/main/IJV) - но вроде только в платной версии
+2. [HAWK](https://github.com/Dim0s/quansheng-UV-K5v3-K1-firmware-pack/tree/main/HAWK)
+3. [IJV](https://github.com/Dim0s/quansheng-UV-K5v3-K1-firmware-pack/tree/main/IJV) - только в платной версии
 ___
 
 <div align="center">

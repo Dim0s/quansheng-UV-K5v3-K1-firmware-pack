@@ -1,3 +1,5 @@
+<h1 align="center">в процессе заполнения...</h1>
+
 <h1 align="center">все прошивки только для раций K5v3 и K1 !!!</h1>
 <h1 align="center">СОХРАНИ КАЛИБРОВКИ ПЕРЕД ПРОШИВКОЙ !!!</h1>
 
@@ -19,8 +21,6 @@
 2. [IJV](https://github.com/Dim0s/quansheng-UV-K5v3-K1-firmware-pack/tree/main/IJV) - но вроде только в платной версии
 ___
 
-<h1 align="center">СОХРАНИЛ КАЛИБРОВКИ ???</h1>
-
 <div align="center">
 
 ### в топике про рации на [4pda](https://4pda.to/forum/index.php?showtopic=1071343) из за ряда причин развитие темы остановилось
@@ -28,7 +28,4 @@ ___
 
 </div>
 
-<h1 align="center">в процессе заполнения...</h1>
-
-<h1 align="center">ДА СОХРАНИ ТЫ УЖЕ ЭТИ КАЛИБРОВКИ !!!</h1>
-<h1 align="center">=Ъ</h1>
+<h1 align="center">СОХРАНИЛ КАЛИБРОВКИ ???</h1>

@@ -15,7 +15,7 @@
 4. [IJV](https://github.com/Dim0s/quansheng-UV-K5v3-K1-firmware-pack/tree/main/IJV) - в платной версии есть чат, но сам не тестил и не знаком с его степенью крутоты, из за чего пока последнее место
 
 ### прошивки с поддержкой модуля SI4732:
-1. [IOTCU](https://github.com/Dim0s/quansheng-UV-K5v3-K1-firmware-pack/tree/main/IOTCU)
+1. [IOTCU](https://github.com/Dim0s/quansheng-UV-K5v3-K1-firmware-pack/tree/main/IOTCU) - (сделан на базе последнего F4HWN)
 2. [IJV](https://github.com/Dim0s/quansheng-UV-K5v3-K1-firmware-pack/tree/main/IJV) - но вроде только в платной версии
 ___
 

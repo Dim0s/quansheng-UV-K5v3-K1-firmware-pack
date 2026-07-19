@@ -10,9 +10,6 @@ ________________________________________________________________________________
 всегда свежее описание прошивки на Wiki автора, но на инглише:
 https://github.com/armel/uv-k1-k5v3-firmware-custom/wiki
 
-логи изменений на инглише, смотреть в репе автора:
-https://github.com/armel/uv-k1-k5v3-firmware-custom/releases
-
 репозиторий автора:
 https://github.com/armel/uv-k1-k5v3-firmware-custom
 

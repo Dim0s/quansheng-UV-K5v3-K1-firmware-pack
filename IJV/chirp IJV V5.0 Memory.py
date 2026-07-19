@@ -19,8 +19,6 @@ CONFIG_ACCESS_PRE_DELAY = 0.08
 CONFIG_ACCESS_POST_DELAY = 0.08
 BANK_NAME_START = 0x14C0
 BANK_NAME_SIZE = 8
-BANK_NAME_MAGIC = b"BNKNAME1"
-BANK_NAME_MAGIC_START = BANK_NAME_START + (16 * BANK_NAME_SIZE)
 PLUGIN_LOG_PATH = os.path.join(os.path.dirname(__file__), "chirp_ijv_v5_serial.log")
 
 CMD_HELLO = 0x0514
@@ -174,7 +172,7 @@ UVK5_POWER_LEVELS = [chirp_common.PowerLevel("Low",  watts=1.00),
                      chirp_common.PowerLevel("Med",  watts=2.50),
                      chirp_common.PowerLevel("High", watts=5.00)]
 
-DIGITAL_CODE_LIST = ["OFF","DTMF","ZVEI1","ZVEI2","CCIR-1","CCIR-1F","ZVEI3","CCIR20","EEA"]
+DIGITAL_CODE_LIST = ["OFF","DTMF","ZVEI1","ZVEI2","CCIR-1","CCIR-1F","ZVEI3","CCIR20","EEA","MDC1200"]
 
 SQUELCH_LIST = ["Squelch 0","Squelch 1","Squelch 2","Squelch 3","Squelch 4",
                 "Squelch 5","Squelch 6","Squelch 7","Squelch 8","Squelch 9","NO RX"]

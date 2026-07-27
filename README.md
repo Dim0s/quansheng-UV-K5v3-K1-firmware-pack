@@ -22,7 +22,7 @@
 3. [IJV](https://github.com/Dim0s/quansheng-UV-K5v3-K1-firmware-pack/tree/main/IJV) - только в платной версии
 
 ### прошивки с CW морзянкой кодирование/декодирование
-1. [N7SIX](https://github.com/Dim0s/quansheng-UV-K5v3-K1-firmware-pack/tree/main/N7SIX) - декодирование на рации, сделано на базе свежего F4HWN 
+1. [N7SIX](https://github.com/Dim0s/quansheng-UV-K5v3-K1-firmware-pack/tree/main/N7SIX) - декодирование на рации, в рации можно набрать текст буквами и рация сама закодирует его в морзянку, сделано на базе свежего F4HWN 
 2. [KA52M](https://github.com/Dim0s/quansheng-UV-K5v3-K1-firmware-pack/tree/main/KA52M) - декодирование только через приложение UV AIR DROID, в рации можно набрать текст буквами и рация сама закодирует его в морзянку
 ___
 

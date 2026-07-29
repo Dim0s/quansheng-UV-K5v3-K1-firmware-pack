@@ -49,3 +49,6 @@ https://armel.github.io/uvtools2/
 
 онлайн просмотрщик экрана рации и удалённое управление от Armel (для прошивок на базе F4HWN 5.5.0+)
 https://armel.github.io/k5viewer/
+
+онлайн студия от Armel (объединение всех предыдущих фунций в одном)
+https://armel.github.io/uvstudio/

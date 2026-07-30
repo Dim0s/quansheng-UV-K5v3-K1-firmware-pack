@@ -1,0 +1,5 @@
+PY25Q16HB@SOP8.BIN это полный дамп EEPROM PY25Q16HB UV-K1 на прошивке OUROBOROS-CALYPSO V.1.7.0
+
+
+взято отсюда:
+https://4pda.to/forum/index.php?showtopic=1071343&st=14280#entry142434280

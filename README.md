@@ -8,9 +8,9 @@
 </h1>
 
 ### прошивки с лучшим спектроанализатором:
-1. [Karina](https://github.com/Dim0s/quansheng-UV-K5v3-K1-firmware-pack/tree/main/Karina) - самый быстрый, несколько бендов одновременно, весь диапазон бендов на одном экране
-2. [KA50](https://github.com/Dim0s/quansheng-UV-K5v3-K1-firmware-pack/tree/main/KA50) / [KA52](https://github.com/Dim0s/quansheng-UV-K5v3-K1-firmware-pack/tree/main/KA52) / [KA52M](https://github.com/Dim0s/quansheng-UV-K5v3-K1-firmware-pack/tree/main/KA52M) - быстрый, несколько бендов переключаются по порядку, скан по листам
-3. [IJV](https://github.com/Dim0s/quansheng-UV-K5v3-K1-firmware-pack/tree/main/IJV) - быстрый, 1 любой бенд, ну или не нашёл как сканировать несколько (в бесплатной версии)
+1. [Karina](https://github.com/Dim0s/quansheng-UV-K5v3-K1-firmware-pack/tree/main/Karina) - самый быстрый, можно сканировать сразу несколько бендов
+2. [KA50](https://github.com/Dim0s/quansheng-UV-K5v3-K1-firmware-pack/tree/main/KA50) / [KA52](https://github.com/Dim0s/quansheng-UV-K5v3-K1-firmware-pack/tree/main/KA52) / [KA52M](https://github.com/Dim0s/quansheng-UV-K5v3-K1-firmware-pack/tree/main/KA52M) - быстрый, можно сканировать сразу несколько бендов
+3. [IJV](https://github.com/Dim0s/quansheng-UV-K5v3-K1-firmware-pack/tree/main/IJV) - быстрый, 1 любой бенд (в бесплатной версии)
 4. [F4HWN](https://github.com/Dim0s/quansheng-UV-K5v3-K1-firmware-pack/tree/main/F4HWN) / [GOGU](https://github.com/Dim0s/quansheng-UV-K5v3-K1-firmware-pack/tree/main/GOGU) - средний, бендов нет
 5. [N7SIX](https://github.com/Dim0s/quansheng-UV-K5v3-K1-firmware-pack/tree/main/N7SIX) - средний, есть водопад, бендов нет
 

@@ -7,6 +7,8 @@
 
 </h1>
 
+<h4 align="center">после скачивания, для экономии памяти рекомендуется удалить из раздела прошивальщиков папки "старые версии" весят много а толку мало</h4>
+
 ### прошивки с лучшим спектроанализатором:
 1. [Karina](https://github.com/Dim0s/quansheng-UV-K5v3-K1-firmware-pack/tree/main/Karina) - самый быстрый, можно сканировать сразу несколько бендов
 2. [KA50](https://github.com/Dim0s/quansheng-UV-K5v3-K1-firmware-pack/tree/main/KA50) / [KA52](https://github.com/Dim0s/quansheng-UV-K5v3-K1-firmware-pack/tree/main/KA52) / [KA52M](https://github.com/Dim0s/quansheng-UV-K5v3-K1-firmware-pack/tree/main/KA52M) - быстрый, можно сканировать сразу несколько бендов

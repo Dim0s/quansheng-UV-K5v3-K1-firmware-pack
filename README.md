@@ -19,8 +19,7 @@
 ### прошивки с лучшим мессенджером:
 1. [GOGU](https://github.com/Dim0s/quansheng-UV-K5v3-K1-firmware-pack/tree/main/GOGU) - удобный, простой, быстрый, FSK, ACK (сделано на базе F4HWN 5.6.1)
 2. [PrepperRadio](https://github.com/Dim0s/quansheng-UV-K5v3-K1-firmware-pack/tree/main/PrepperRadio) - чуть сложней, отзывчивость прошивки медленновата, FSK 1.2 / FSK .6 / FSK 2.4 / FFSK 1.2, ACK, избирательная отправка по книжке контактов, шифрование (не проверено), возможность отправлять сообщения с компа на клавиатре (крайне удобно)
-3. [Delta](https://github.com/Dim0s/quansheng-UV-K5v3-K1-firmware-pack/tree/main/Delta) - будущая Mesh-сеть с шифрованием, сложность максимальная, пока не работает
-4. [IJV](https://github.com/Dim0s/quansheng-UV-K5v3-K1-firmware-pack/tree/main/IJV) - в платной версии есть чат, но сам не тестил и не знаком с его степенью крутоты, из за чего пока последнее место
+3. [IJV](https://github.com/Dim0s/quansheng-UV-K5v3-K1-firmware-pack/tree/main/IJV) - в платной версии есть какой то чат, сам не тестил
 
 ### прошивки с поддержкой модуля SI4732:
 1. [IOTCU](https://github.com/Dim0s/quansheng-UV-K5v3-K1-firmware-pack/tree/main/IOTCU) - сделано на базе свежего F4HWN

@@ -28,6 +28,7 @@ https://armel.github.io/k5viewer/
 
 новая авторская онлайн студия (объединение всех предыдущих фунций в одном)
 https://armel.github.io/uvstudio/
+офлайн версия студии есть в папке прошивальщиков
 
 ютуб канал автора:
 https://www.youtube.com/@f4hwn

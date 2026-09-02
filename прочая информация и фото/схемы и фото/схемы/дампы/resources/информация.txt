@@ -1,0 +1,21 @@
+иногда после разных прошивок, откатывая на сток, могут пропасть стартовая картинка и даже озвучка как английская так и китайская
+видимо какая то из прошивок затёрла голосовые сэмплы во внешней флешке 25Q16 и такое не восстановить ни какими ипопулярными способами роллбеков
+
+
+
+для восстановления нажмите в qpscps на Device и там выберите Update resource package
+
+если слетела стартовая картинка то в поле Power-on welcome pictures file: укажите путь до картинки MINI KONG.bmp
+
+если слетела озвучка то в поле Resource file: укажите путь к experimental resource file.BIN
+
+если слетела озвучка на старой прошивке K1_v7.02.07, то в поле Resource file: укажите путь к ZW-show_voice_resource_ch_en_alaw(1)(2).svres
+
+всё это проверено на K1(8), хз что будет на K5v3
+
+
+фаил experimental resource file.BIN это кусочек вырезанный из дампа PY25Q16HB@SOP8.BIN который взят отсюда:
+https://4pda.to/forum/index.php?showtopic=1071343&st=14280#entry142434280
+
+фаил ZW-show_voice_resource_ch_en_alaw(1)(2).svres взят отсюда:
+https://github.com/EthanYan6/uv-k1-k6v3-multi-system-web/tree/main/firmware

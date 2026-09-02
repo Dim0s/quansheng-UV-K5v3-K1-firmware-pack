@@ -1,9 +1,3 @@
-Калькулятор антенны Яги
-https://radioskot.com/calc/kalkulyator-antenny-volnovoj-kanal-yagi
-
-Калькулятор длины антенн диполь
-https://radioskot.com/calc/kalkulyator-dliny-antenny-na-raznye-chastoty
-_____________________________________________________________________________________
 APRS приложение на смартфон:
 https://aprsdroid.org/download/
 _____________________________________________________________________________________

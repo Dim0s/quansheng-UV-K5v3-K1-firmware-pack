@@ -9,7 +9,7 @@ UPD:
 версия BD1AHN original.bin оригинал от автора с задержкой
 версия BD1AHN fast-RX.bin самопал:
 1. убрал задержку TX/RX между VFO
-2. скрыл мёртвые пункты назначений для клавиши MENU: MAIN ONLY, RX MODE, переименовал "VFO A/B" в "VFO A/B/C"
+2. скрыл пункты назначений для клавиши MENU: MAIN ONLY, RX MODE, переименовал "VFO A/B" в "VFO A/B/C"
 
 в целом обычный F4HWN 5.8.0 но:
 переключать VFO нельзя (MAIN ONLY, DUAL RX и т.д.)

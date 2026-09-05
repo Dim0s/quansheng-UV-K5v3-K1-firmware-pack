@@ -32,8 +32,9 @@
 4. [N7SIX](https://github.com/Dim0s/quansheng-UV-K5v3-K1-firmware-pack/tree/main/N7SIX) - декодирование на рации, в рации можно набрать текст буквами и рация сама закодирует его в морзянку, сделано на базе F4HWN
 
 ### прошивки с поддержкой 3 VFO
-1. [BD1AHN](https://github.com/Dim0s/quansheng-UV-K5v3-K1-firmware-pack/tree/main/BD1AHN) - сделана на базе F4HWN
-2. [IJV](https://github.com/Dim0s/quansheng-UV-K5v3-K1-firmware-pack/tree/main/IJV) - только в платной версии
+1. [KA52M](https://github.com/Dim0s/quansheng-UV-K5v3-K1-firmware-pack/tree/main/KA52M) - постоянно отображает 3 VFO, но умеет одной кнопкой переключаться между двумя тройными VFO, и того 6 VFO
+2. [BD1AHN](https://github.com/Dim0s/quansheng-UV-K5v3-K1-firmware-pack/tree/main/BD1AHN) - сделана на базе F4HWN
+3. [IJV](https://github.com/Dim0s/quansheng-UV-K5v3-K1-firmware-pack/tree/main/IJV) - только в платной версии
 ___
 
 <h2 align="center">в процессе заполнения</h2>

@@ -490,7 +490,7 @@ SET_LCK_LIST = ["KEYS", "KEYS + ACTIONS", "KEYS + PTT", "KEYS + ACTIONS + PTT"]
 SET_MET_LIST = ["TINY", "CLASSIC"]
 
 # dtmf_flags
-PTTID_LIST = ["OFF", "UP CODE", "DOWN CODE", "UP+DOWN CODE", "APOLLO QUINDAR"]
+PTTID_LIST = ["OFF", "UP CODE", "DOWN CODE", "UP+DOWN CODE", "APOLLO QUINDAR", "MDC-1200", "MDC-1200L"]
 
 # power          
 UVK5_POWER_LEVELS = [chirp_common.PowerLevel("USER = < 20mW to 5W", watts=0.000),
@@ -657,7 +657,7 @@ VOICE_LIST = ["OFF", "Chinese", "English"]
 # ACTIVE CHANNEL
 TX_VFO_LIST = ["A", "B"]
 ALARMMODE_LIST = ["SITE", "TONE"]
-ROGER_LIST = ["OFF", "Roger beep (ROGER)", "MDC data burst (MDC)", "MDC-1200"]
+ROGER_LIST = ["OFF", "Roger beep (ROGER)", "MDC data burst (MDC)", "MDC-1200", "MDC-1200L"]
 RTE_LIST = ["OFF", "100ms", "200ms", "300ms", "400ms",
             "500ms", "600ms", "700ms", "800ms", "900ms", "1000ms"]
 VOX_LIST = ["OFF", "1", "2", "3", "4", "5", "6", "7", "8", "9", "10"]
@@ -1546,7 +1546,9 @@ class UVK5RadioEgzumer(chirp_common.CloneModeRadio):
                    '* UP CODE : Send UPCODE when TX.\n' + \
                    '* DOWW CODE : Send DWCODE when back to RX\n' + \
                    '* UP+DOWN Code : Send UPCODE and DWCODE\n' + \
-                   '* APOLLO QUINDAR : Send beep at start and end of TX')
+                   '* APOLLO QUINDAR : Send beep at start and end of TX\n' + \
+                   '* MDC-1200 : Send MDC-1200 frame at end of TX (PTT-ID)\n' + \
+                   '* MDC-1200L : Send MDC-1200L long frame at end of TX (PTT-ID)')
 
         mem.extra.append(rs)
 

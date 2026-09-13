@@ -35,6 +35,10 @@
 1. [KA52M](https://github.com/Dim0s/quansheng-UV-K5v3-K1-firmware-pack/tree/main/KA52M/3%20VFO) - постоянно отображает 3 VFO, но умеет переключаться между двумя тройными VFO, и того 6 VFO (HOLY SHIT!!!)
 2. [BD1AHN](https://github.com/Dim0s/quansheng-UV-K5v3-K1-firmware-pack/tree/main/BD1AHN) - сделана на базе F4HWN
 3. [IJV](https://github.com/Dim0s/quansheng-UV-K5v3-K1-firmware-pack/tree/main/IJV) - только в платной версии
+
+### прошивки поддерживающие Мультизагрузку от Armel
+1. [F4HWN](https://github.com/Dim0s/quansheng-UV-K5v3-K1-firmware-pack/tree/main/F4HWN)
+2. [GOGU](https://github.com/Dim0s/quansheng-UV-K5v3-K1-firmware-pack/tree/main/GOGU)
 ___
 
 <h2 align="center">в процессе заполнения</h2>

@@ -17,10 +17,10 @@ ___________________________________________________________________________
 тема на форуме:
 https://4pda.to/forum/index.php?showtopic=1108105
 ___________________________________________________________________________
-скоро релиз:
-PocketCHIRP - тот же чирп но для андроид
+PocketCHIRP - тот же чирп но для андроид, ставить через GooglePlay
+https://play.google.com/store/apps/details?id=com.wg5eek.pocketchirp
 
-демо:
+видео демо:
 https://www.youtube.com/live/TqmVucvsIN0
 
 репозиторий автора:

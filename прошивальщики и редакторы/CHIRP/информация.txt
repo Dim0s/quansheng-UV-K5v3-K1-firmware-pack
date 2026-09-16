@@ -18,7 +18,10 @@ ___________________________________________________________________________
 https://4pda.to/forum/index.php?showtopic=1108105
 ___________________________________________________________________________
 PocketCHIRP - тот же чирп но для андроид, ставить через GooglePlay
+основная программа:
 https://play.google.com/store/apps/details?id=com.wg5eek.pocketchirp
+и компонент для него:
+https://play.google.com/store/apps/details?id=com.wg5eek.pocketchirp.engine
 
 видео демо:
 https://www.youtube.com/live/TqmVucvsIN0

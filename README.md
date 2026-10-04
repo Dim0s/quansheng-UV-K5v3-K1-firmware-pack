@@ -13,16 +13,16 @@
 1. [Karina](https://github.com/Dim0s/quansheng-UV-K5v3-K1-firmware-pack/tree/main/Karina) - самый быстрый, можно сканировать сразу несколько бендов
 2. [KA50](https://github.com/Dim0s/quansheng-UV-K5v3-K1-firmware-pack/tree/main/KA50) / [KA52](https://github.com/Dim0s/quansheng-UV-K5v3-K1-firmware-pack/tree/main/KA52) / [KA52M](https://github.com/Dim0s/quansheng-UV-K5v3-K1-firmware-pack/tree/main/KA52M) - быстрый, можно сканировать сразу несколько бендов
 3. [IJV](https://github.com/Dim0s/quansheng-UV-K5v3-K1-firmware-pack/tree/main/IJV) - быстрый, 1 любой бенд (в бесплатной версии)
-4. [F4HWN](https://github.com/Dim0s/quansheng-UV-K5v3-K1-firmware-pack/tree/main/F4HWN) / [GOGU](https://github.com/Dim0s/quansheng-UV-K5v3-K1-firmware-pack/tree/main/GOGU) - средний, бендов нет
-5. [N7SIX](https://github.com/Dim0s/quansheng-UV-K5v3-K1-firmware-pack/tree/main/N7SIX) - средний, есть водопад, бендов нет
+4. [F4HWN](https://github.com/Dim0s/quansheng-UV-K5v3-K1-firmware-pack/tree/main/F4HWN) / [GOGU](https://github.com/Dim0s/quansheng-UV-K5v3-K1-firmware-pack/tree/main/GOGU) - скорость средняя, бендов нет
+5. [N7SIX](https://github.com/Dim0s/quansheng-UV-K5v3-K1-firmware-pack/tree/main/N7SIX) - скорость средняя, есть водопад, бендов нет
 
 ### прошивки с лучшим мессенджером:
-1. [GOGU](https://github.com/Dim0s/quansheng-UV-K5v3-K1-firmware-pack/tree/main/GOGU) - удобный, простой, быстрый, FSK, ACK (сделано на базе F4HWN)
+1. [GOGU](https://github.com/Dim0s/quansheng-UV-K5v3-K1-firmware-pack/tree/main/GOGU) - удобный, простой, быстрый, FSK, ACK, сделано на базе F4HWN
 2. [PrepperRadio](https://github.com/Dim0s/quansheng-UV-K5v3-K1-firmware-pack/tree/main/PrepperRadio) - чуть сложней, отзывчивость прошивки медленновата, FSK 1.2 / FSK .6 / FSK 2.4 / FFSK 1.2, ACK, избирательная отправка по книжке контактов, шифрование (не проверено), возможность отправлять сообщения с компа на клавиатре (крайне удобно)
 3. [IJV](https://github.com/Dim0s/quansheng-UV-K5v3-K1-firmware-pack/tree/main/IJV) - в платной версии есть какой то мессенджер, сам не тестил
 
 ### прошивки с поддержкой модуля SI4732:
-1. [IOTCU](https://github.com/Dim0s/quansheng-UV-K5v3-K1-firmware-pack/tree/main/IOTCU) - сделано на базе свежего F4HWN
+1. [IOTCU](https://github.com/Dim0s/quansheng-UV-K5v3-K1-firmware-pack/tree/main/IOTCU) - сделано на базе F4HWN
 2. [IJV](https://github.com/Dim0s/quansheng-UV-K5v3-K1-firmware-pack/tree/main/IJV) - только в платной версии
 
 ### прошивки с CW морзянкой
@@ -34,14 +34,14 @@
 
 ### прошивки с поддержкой 3 VFO
 1. [KA52M](https://github.com/Dim0s/quansheng-UV-K5v3-K1-firmware-pack/tree/main/KA52M/3%20VFO) - постоянно отображает 3 VFO, но умеет переключаться между двумя тройными VFO, и того 6 VFO (HOLY SHIT!!!)
-2. [BD1AHN](https://github.com/Dim0s/quansheng-UV-K5v3-K1-firmware-pack/tree/main/BD1AHN) - сделана на базе F4HWN
+2. [BD1AHN](https://github.com/Dim0s/quansheng-UV-K5v3-K1-firmware-pack/tree/main/BD1AHN) - сделано на базе F4HWN
 3. [IJV](https://github.com/Dim0s/quansheng-UV-K5v3-K1-firmware-pack/tree/main/IJV) - только в платной версии
 
 ### прошивки поддерживающие Мультизагрузку от Armel
 1. [F4HWN](https://github.com/Dim0s/quansheng-UV-K5v3-K1-firmware-pack/tree/main/F4HWN)
 2. [GOGU](https://github.com/Dim0s/quansheng-UV-K5v3-K1-firmware-pack/tree/main/GOGU)
 3. [IOTCU](https://github.com/Dim0s/quansheng-UV-K5v3-K1-firmware-pack/tree/main/IOTCU)
-4. [SONIC](https://github.com/Robby69400/Sonic)
+4. [SONIC](https://github.com/Robby69400/Sonic) умеет 4к каналов, похожа на KA50, сыроватая, пока не в репе
 
 ### прошивки с защитой паролем
 1. [Delta](https://github.com/Dim0s/quansheng-UV-K5v3-K1-firmware-pack/tree/main/Delta) - защита паролем при включении рации, шифрование сохранённых каналов алгоритмом ChaCha20, сделано на базе F4HWN

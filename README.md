@@ -26,10 +26,11 @@
 2. [IJV](https://github.com/Dim0s/quansheng-UV-K5v3-K1-firmware-pack/tree/main/IJV) - только в платной версии
 
 ### прошивки с CW морзянкой
-1. [NR7Y](https://github.com/Dim0s/quansheng-UV-K5v3-K1-firmware-pack/tree/main/NR7Y) - морзянка без декодирования приёма (показывает только отправляемые символы), поддерживает подключение внешних ямбических CW манипуляторов в USBc, сделано на базе  F4HWN
+1. [NR7Y](https://github.com/Dim0s/quansheng-UV-K5v3-K1-firmware-pack/tree/main/NR7Y) - декодирование только отправляемых символов, поддерживает подключение внешних ямбических CW манипуляторов в USBc, сделано на базе F4HWN
 2. [E25WOP](https://github.com/Dim0s/quansheng-UV-K5v3-K1-firmware-pack/tree/main/E25WOP) - декодирование на рации, поддерживает подключение внешних ямбических CW манипуляторов в USBc, сделано на базе F4HWN
 3. [KA52M](https://github.com/Dim0s/quansheng-UV-K5v3-K1-firmware-pack/tree/main/KA52M) - декодирование только через приложение UV AIR DROID или любые другие сторонние, в рации можно набрать текст буквами и рация сама закодирует его в морзянку, или самому набивать морзянку кнопкой PTT
 4. [N7SIX](https://github.com/Dim0s/quansheng-UV-K5v3-K1-firmware-pack/tree/main/N7SIX) - декодирование на рации, в рации можно набрать текст буквами и рация сама закодирует его в морзянку, сделано на базе F4HWN
+5. [Delta](https://github.com/Dim0s/quansheng-UV-K5v3-K1-firmware-pack/tree/main/Delta) - декодирование только отправляемых символов, сделано на базе F4HWN
 
 ### прошивки с поддержкой 3 VFO
 1. [KA52M](https://github.com/Dim0s/quansheng-UV-K5v3-K1-firmware-pack/tree/main/KA52M/3%20VFO) - постоянно отображает 3 VFO, но умеет переключаться между двумя тройными VFO, и того 6 VFO (HOLY SHIT!!!)

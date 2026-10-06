@@ -10,11 +10,12 @@
 <h4 align="center">после скачивания, для экономии памяти рекомендуется удалить из раздела прошивальщиков папки "старые версии" весят много а толку мало</h4>
 
 ### прошивки с лучшим спектроанализатором:
-1. [Karina](https://github.com/Dim0s/quansheng-UV-K5v3-K1-firmware-pack/tree/main/Karina) - самый быстрый, можно сканировать сразу несколько бендов
-2. [KA50](https://github.com/Dim0s/quansheng-UV-K5v3-K1-firmware-pack/tree/main/KA50) / [KA52](https://github.com/Dim0s/quansheng-UV-K5v3-K1-firmware-pack/tree/main/KA52) / [KA52M](https://github.com/Dim0s/quansheng-UV-K5v3-K1-firmware-pack/tree/main/KA52M) - быстрый, можно сканировать сразу несколько бендов
-3. [IJV](https://github.com/Dim0s/quansheng-UV-K5v3-K1-firmware-pack/tree/main/IJV) - быстрый, 1 любой бенд (в бесплатной версии)
-4. [F4HWN](https://github.com/Dim0s/quansheng-UV-K5v3-K1-firmware-pack/tree/main/F4HWN) / [GOGU](https://github.com/Dim0s/quansheng-UV-K5v3-K1-firmware-pack/tree/main/GOGU) - скорость средняя, бендов нет
-5. [N7SIX](https://github.com/Dim0s/quansheng-UV-K5v3-K1-firmware-pack/tree/main/N7SIX) - скорость средняя, есть водопад, бендов нет
+1. [Karina](https://github.com/Dim0s/quansheng-UV-K5v3-K1-firmware-pack/tree/main/Karina) - самый быстрый, сканирует по диапазону частот или сразу несколько бендов
+2. [KA50](https://github.com/Dim0s/quansheng-UV-K5v3-K1-firmware-pack/tree/main/KA50) / [KA52](https://github.com/Dim0s/quansheng-UV-K5v3-K1-firmware-pack/tree/main/KA52) / [KA52M](https://github.com/Dim0s/quansheng-UV-K5v3-K1-firmware-pack/tree/main/KA52M) - быстрый, сканирует по диапазону частот, по каналам или сразу несколько бендов
+3. [IJV](https://github.com/Dim0s/quansheng-UV-K5v3-K1-firmware-pack/tree/main/IJV) - быстрый, сканирует по диапазону частот или 1 любой бенд (в бесплатной версии)
+4. [GOGU](https://github.com/Dim0s/quansheng-UV-K5v3-K1-firmware-pack/tree/main/GOGU) - скорость средняя, сканирует по диапазону частот или по каналам, бендов нет
+5. [N7SIX](https://github.com/Dim0s/quansheng-UV-K5v3-K1-firmware-pack/tree/main/N7SIX) - скорость средняя, сканирует по диапазону частот, бендов нет, есть водопад
+6. [F4HWN](https://github.com/Dim0s/quansheng-UV-K5v3-K1-firmware-pack/tree/main/F4HWN) - скорость средняя, сканирует по диапазону частот, бендов нет
 
 ### прошивки с лучшим мессенджером:
 1. [GOGU](https://github.com/Dim0s/quansheng-UV-K5v3-K1-firmware-pack/tree/main/GOGU) - удобный, простой, быстрый, FSK, ACK, сделано на базе F4HWN
@@ -33,7 +34,7 @@
 5. [Delta](https://github.com/Dim0s/quansheng-UV-K5v3-K1-firmware-pack/tree/main/Delta) - декодирование только отправляемых символов, сделано на базе F4HWN
 
 ### прошивки с поддержкой 3 VFO
-1. [KA52M](https://github.com/Dim0s/quansheng-UV-K5v3-K1-firmware-pack/tree/main/KA52M/3%20VFO) - постоянно отображает 3 VFO, но умеет переключаться между двумя тройными VFO, и того 6 VFO (HOLY SHIT!!!)
+1. [KA52M](https://github.com/Dim0s/quansheng-UV-K5v3-K1-firmware-pack/tree/main/KA52M/3%20VFO) - умеет переключаться между двумя тройными VFO, и того 6 VFO
 2. [BD1AHN](https://github.com/Dim0s/quansheng-UV-K5v3-K1-firmware-pack/tree/main/BD1AHN) - сделано на базе F4HWN
 3. [IJV](https://github.com/Dim0s/quansheng-UV-K5v3-K1-firmware-pack/tree/main/IJV) - только в платной версии
 

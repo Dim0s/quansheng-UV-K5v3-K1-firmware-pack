@@ -37,14 +37,14 @@
 2. [BD1AHN](https://github.com/Dim0s/quansheng-UV-K5v3-K1-firmware-pack/tree/main/BD1AHN) - сделано на базе F4HWN
 3. [IJV](https://github.com/Dim0s/quansheng-UV-K5v3-K1-firmware-pack/tree/main/IJV) - только в платной версии
 
+### прошивки с защитой паролем
+1. [Delta](https://github.com/Dim0s/quansheng-UV-K5v3-K1-firmware-pack/tree/main/Delta) - защита паролем при включении рации, шифрование сохранённых каналов алгоритмом ChaCha20, сделано на базе F4HWN
+
 ### прошивки поддерживающие Мультизагрузку от Armel
 1. [F4HWN](https://github.com/Dim0s/quansheng-UV-K5v3-K1-firmware-pack/tree/main/F4HWN)
 2. [GOGU](https://github.com/Dim0s/quansheng-UV-K5v3-K1-firmware-pack/tree/main/GOGU)
 3. [IOTCU](https://github.com/Dim0s/quansheng-UV-K5v3-K1-firmware-pack/tree/main/IOTCU)
 4. [SONIC](https://github.com/Robby69400/Sonic) умеет 4к каналов, похожа на KA50, сыроватая, пока не в репе
-
-### прошивки с защитой паролем
-1. [Delta](https://github.com/Dim0s/quansheng-UV-K5v3-K1-firmware-pack/tree/main/Delta) - защита паролем при включении рации, шифрование сохранённых каналов алгоритмом ChaCha20, сделано на базе F4HWN
 ___
 
 <h2 align="center">в процессе заполнения</h2>

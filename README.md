@@ -1,9 +1,9 @@
 <h4 align="center">
   
   если зашли с телефона, нажмите на надпись [View all files]() вверху, чтоб увидеть все папки
-
-</h4>
-
+  
+  </h4>
+  
 ___
 
 <h3 align="center">все прошивки только для раций K5v3, K1 и всех остальных с Bootloader 7* !!!</h3>
@@ -14,6 +14,7 @@ ___
 [>СКАЧАТЬ ВЕСЬ АРХИВ<](https://github.com/Dim0s/quansheng-UV-K5v3-K1-firmware-pack/archive/refs/heads/main.zip)
 
 </h3>
+
 ___
 
 ### прошивки с лучшим спектроанализатором:
@@ -53,9 +54,14 @@ ___
 2. [GOGU](https://github.com/Dim0s/quansheng-UV-K5v3-K1-firmware-pack/tree/main/GOGU)
 3. [IOTCU](https://github.com/Dim0s/quansheng-UV-K5v3-K1-firmware-pack/tree/main/IOTCU)
 4. [SONIC](https://github.com/Robby69400/Sonic) умеет 4к каналов, похожа на KA50, сыроватая, пока не в репе
+
 ___
 
-<h2 align="center">в процессе заполнения</h2>
+<h2 align="center">
+  
+  в процессе заполнения
+
+</h2>
 
 <div align="center">
 
@@ -64,6 +70,10 @@ ___
 
 </div>
 
-<h2 align="center">СОХРАНИЛ КАЛИБРОВКИ ???</h2>
+<h2 align="center">
+  
+  СОХРАНИЛ КАЛИБРОВКИ ???
+  
+  </h2>
 
 <h5 align="center">донат на карту юмани 5599 0050 9848 7759 УРАЛ</h5>

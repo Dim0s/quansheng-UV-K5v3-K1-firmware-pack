@@ -53,7 +53,8 @@ ___
 1. [F4HWN](https://github.com/Dim0s/quansheng-UV-K5v3-K1-firmware-pack/tree/main/F4HWN)
 2. [GOGU](https://github.com/Dim0s/quansheng-UV-K5v3-K1-firmware-pack/tree/main/GOGU)
 3. [IOTCU](https://github.com/Dim0s/quansheng-UV-K5v3-K1-firmware-pack/tree/main/IOTCU)
-4. [SONIC](https://github.com/Robby69400/Sonic) умеет 4к каналов, похожа на KA50, сыроватая, пока не в репе
+4. [N7SIX](https://github.com/Dim0s/quansheng-UV-K5v3-K1-firmware-pack/tree/main/N7SIX)
+5. [SONIC](https://github.com/Robby69400/Sonic) умеет 4к каналов, похожа на KA50, сыроватая, пока не в репе
 
 ___
 

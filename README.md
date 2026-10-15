@@ -40,6 +40,7 @@ ___
 3. [KA52M](https://github.com/Dim0s/quansheng-UV-K5v3-K1-firmware-pack/tree/main/KA52M) - декодирование только через приложение UV AIR DROID или любые другие сторонние, в рации можно набрать текст буквами и она сама закодирует его в морзянку, или самому набивать морзянку кнопкой PTT
 4. [N7SIX](https://github.com/Dim0s/quansheng-UV-K5v3-K1-firmware-pack/tree/main/N7SIX) - декодирование на рации, можно набрать текст буквами и рация сама закодирует его в морзянку, сделано на базе F4HWN
 5. [Delta](https://github.com/Dim0s/quansheng-UV-K5v3-K1-firmware-pack/tree/main/Delta) - декодирование только отправляемых символов, сделано на базе F4HWN
+6. [F4HWN](https://github.com/Dim0s/quansheng-UV-K5v3-K1-firmware-pack/tree/main/F4HWN) - только в издании Labs и с определёнными приложениями
 
 ### прошивки с поддержкой 3 VFO
 1. [KA52M](https://github.com/Dim0s/quansheng-UV-K5v3-K1-firmware-pack/tree/main/KA52M/3%20VFO) - умеет переключаться между двумя тройными VFO, и того 6 VFO

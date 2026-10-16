@@ -46,6 +46,17 @@ ________________________________________________________________________________
 сайт автора:
 https://www.ijvradio.com/
 
+прямые ссылки на скачивание RadioManager с сайта автора:
+https://www.ijvradio.com/download/RadioManager_windows_x64.exe
+https://www.ijvradio.com/download/RadioManager_windows_x32.exe
+https://www.ijvradio.com/download/RadioManager_linux
+
+прямые ссылки на скачивание Станции BBS с сайта автора:
+https://www.ijvradio.com/download/IJV_BBS_windows_x64.exe
+https://www.ijvradio.com/download/IJV_BBS_linux
+https://www.ijvradio.com/download/IJV_BBS_raspberry
+https://www.ijvradio.com/download/IJV_BBS_android.apk
+
 телеграмм канал
 https://t.me/IJVchannel
 

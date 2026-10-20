@@ -106,7 +106,7 @@ struct {
   u8 noFskTx:1,
      noRoger:1,
      step:6;
-  u8 __UNUSED_SCRAMBLER;
+  u8 unused_scrambler;
 
 } channel[1024];
 
@@ -171,7 +171,7 @@ struct {
   u8 noFskTx:1,
      noRoger:1,
      step:6;
-  u8 __UNUSED_SCRAMBLER;
+  u8 unused_scrambler;
 
 } vfo_channel[14];
 
@@ -3827,7 +3827,7 @@ class UVK5RadioEgzumer(chirp_common.CloneModeRadio):
         _mem_chan.txLock = get_setting("txLock", 0)
         _mem_chan.noFskTx = get_setting("noFskTx", False)
         _mem_chan.noRoger = get_setting("noRoger", False)
-        _mem_chan.__UNUSED_SCRAMBLER = 0
+        _mem_chan.unused_scrambler = 0
         _mem_chan.busyChLockout = get_setting("busyChLockout", False)
         _mem_chan.dtmf_pttid = get_setting("pttid", 0)
         _mem_chan.freq_reverse = get_setting("frev", False)

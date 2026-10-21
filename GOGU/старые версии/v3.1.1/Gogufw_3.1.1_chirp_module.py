@@ -3,7 +3,7 @@
 # Matches the GOGUFW external-flash EEPROM aliases:
 #   FM names: 0x00D000 alias -> firmware flash 0x013000
 #   Messenger/Call config: 0x00E000 alias -> firmware flash 0x012000
-# Includes GGFW settings: MsgRx, MsgAck, MsgBeep, MsgLed, CllTon, CllVol, CllSgn, RngRsp, Drafts, FM names.
+# Includes GGFW settings: MsgRx, MsgAck, MsgBeep, MsgLed, CllTon, CllVol, RngRsp, Callsign, Drafts, FM names.
 
 # Quansheng UV-K5 driver (c) 2023 Jacek Lipkowski <sq5bpf@lipkowski.org>
 # Adapted For UV-K5 EGZUMER custom software By EGZUMER, JOC2
@@ -61,9 +61,9 @@ DEBUG_SHOW_OBFUSCATED_COMMANDS = False
 DEBUG_SHOW_MEMORY_ACTIONS = False
 
 # TODO: remove the driver version when it's in mainline chirp
-DRIVER_VERSION = "Quansheng UV-K1 / UV-K5 V3 driver ver: 2026/05/07 (c) F4HWN v5.5.0"
+DRIVER_VERSION = "GOGUFW UV-K1 / UV-K5 V3 CHIRP driver v3.1.1"
 FIRMWARE_VERSION_UPDATE = "https://github.com/Gogu-Qs/GOGUFW-UV-K1-Messenger/releases"
-CHIRP_DRIVER_VERSION_UPDATE = "https://github.com/armel/uv-k1-k5v3-firmware-custom/releases"
+CHIRP_DRIVER_VERSION_UPDATE = "https://github.com/Gogu-Qs/GOGUFW-UV-K1-Messenger/releases"
 
 CHAINE_F4HWN = "https://www.youtube.com/@f4hwn"
 
@@ -106,7 +106,7 @@ struct {
   u8 noFskTx:1,
      noRoger:1,
      step:6;
-  u8 __UNUSED_SCRAMBLER;
+  u8 unused_scrambler;
 
 } channel[1024];
 
@@ -171,7 +171,7 @@ struct {
   u8 noFskTx:1,
      noRoger:1,
      step:6;
-  u8 __UNUSED_SCRAMBLER;
+  u8 unused_scrambler;
 
 } vfo_channel[14];
 
@@ -561,9 +561,6 @@ UVK5_POWER_LEVELS = [chirp_common.PowerLevel("USER = < 20mW to 5W", watts=0.000)
                      chirp_common.PowerLevel("HIGH = 5W", watts=5.00),
                      ]
 
-# compander
-COMPANDER_LIST = ["OFF", "TX", "RX", "TX/RX"]
-
 # rx mode
 RXMODE_LIST = ["MAIN ONLY", "DUAL RX RESPOND", "CROSS BAND", "MAIN TX DUAL RX"]
 
@@ -779,7 +776,10 @@ BANDS_WIDE = {
         6: [470.0, 1300.0]
         }
 
-SCANLIST_LIST = ["OFF"] + [f"List [{i}]" for i in range(1, MR_CHANNELS_LIST)] + ["ALL"]
+# Raw values are 0=OFF, 1..24=list number, and 25=ALL.
+SCANLIST_LIST = (["OFF"] +
+                 [f"List [{i}]" for i in range(1, MR_CHANNELS_LIST)] +
+                 ["ALL"])
 
 SCANLIST_SELECT_LIST = (
     [f"LIST [{i}]" for i in range(1, MR_CHANNELS_LIST)]
@@ -1417,29 +1417,34 @@ class UVK5RadioEgzumer(chirp_common.CloneModeRadio):
         return repr(self._memobj.channel[number-1])
 
     def validate_memory(self, mem):
-        # Ensure frequency and offset are integers (not strings or bitDE objects)
-        # to prevent TypeError in parent class validation
+        # validate_memory() is called with a FrozenMemory by current CHIRP and
+        # must not mutate it.  Normalize only a disposable copy when an older
+        # importer supplies numeric strings or bitwise values.
+        candidate = mem
         try:
             if not isinstance(mem.freq, int):
-                mem.freq = int(mem.freq)
+                candidate = mem.dupe()
+                candidate.freq = int(mem.freq)
             if not isinstance(mem.offset, int):
-                mem.offset = int(mem.offset)
+                if candidate is mem:
+                    candidate = mem.dupe()
+                candidate.offset = int(mem.offset)
         except (ValueError, TypeError):
             # If conversion fails, let parent handle it with proper error
             pass
 
-        msgs = super().validate_memory(mem)
+        msgs = super().validate_memory(candidate)
 
-        if mem.duplex == "" :
+        if candidate.duplex == "" :
             return msgs
 
         # find tx frequency
-        if mem.duplex == '-':
-            txfreq = mem.freq - mem.offset
-        elif mem.duplex == '+':
-            txfreq = mem.freq + mem.offset
+        if candidate.duplex == '-':
+            txfreq = candidate.freq - candidate.offset
+        elif candidate.duplex == '+':
+            txfreq = candidate.freq + candidate.offset
         else:
-            txfreq = mem.freq
+            txfreq = candidate.freq
 
         # find band
         band = self._find_band(txfreq)
@@ -1448,9 +1453,9 @@ class UVK5RadioEgzumer(chirp_common.CloneModeRadio):
                    "is not supported by this radio"
             msgs.append(chirp_common.ValidationWarning(msg))
 
-        band = self._find_band(mem.freq)
+        band = self._find_band(candidate.freq)
         if band is False:
-            msg = f"The frequency {mem.freq/1000000.0:%.4f}MHz " \
+            msg = f"The frequency {candidate.freq/1000000.0:.4f}MHz " \
                    "is not supported by this radio"
             msgs.append(chirp_common.ValidationWarning(msg))
 
@@ -1593,23 +1598,23 @@ class UVK5RadioEgzumer(chirp_common.CloneModeRadio):
             vfo_index = ch_num - MR_CHANNELS_MAX
             _mem = self._memobj.vfo_channel[vfo_index]
 
-        is_empty = False
-        # We'll consider any blank (i.e. 0MHz frequency) record empty.
-        if (_mem.freq == 0xffffffff) or (_mem.freq == 0):
-            is_empty = True
-
         # We'll also look at the channel attributes if a memory has them
         tmpscn = 0
-        tmp_comp = 0
         if ch_num < MR_CHANNELS_MAX:
             _mem3 = self._memobj.ch_attr[ch_num]
             # scanlists - use new 5-bit scanlist field
             tmpscn = _mem3.scanlist
-            tmp_comp = list_def(_mem3.compander, COMPANDER_LIST, 0)
         elif ch_num < MR_CHANNELS_MAX + 14:
             att_num = MR_CHANNELS_MAX + int((ch_num - MR_CHANNELS_MAX) / 2)
             _mem3 = self._memobj.ch_attr[att_num]
-            tmp_comp = list_def(_mem3.compander, COMPANDER_LIST, 0)
+
+        # Firmware validity is carried by the channel-attribute band.  A
+        # delete marks an MR channel as band 7 and intentionally leaves the
+        # 16-byte frequency record in place.  Checking frequency alone makes
+        # those deleted records reappear in CHIRP.
+        is_empty = int(_mem.freq) in (0, 0xffffffff)
+        if ch_num < MR_CHANNELS_MAX and int(_mem3.band) > 6:
+            is_empty = True
 
         if is_empty:
             mem.empty = True
@@ -1645,10 +1650,6 @@ class UVK5RadioEgzumer(chirp_common.CloneModeRadio):
             rs = RadioSetting("dtmfdecode", "DTMF decode", val)
 #            if self._memobj.BUILD_OPTIONS.ENABLE_DTMF_CALLING:
 #                mem.extra.append(rs)
-
-            val = RadioSettingValueList(COMPANDER_LIST)
-            rs = RadioSetting("compander", "Compander", val)
-            mem.extra.append(rs)
 
             val = RadioSettingValueList(SCANLIST_LIST)
             rs = RadioSetting("scanlists", "Scanlists", val)
@@ -1799,12 +1800,6 @@ class UVK5RadioEgzumer(chirp_common.CloneModeRadio):
         rs = RadioSetting("dtmfdecode", "DTMF decode (D Decd)", val)
 #        if self._memobj.BUILD_OPTIONS.ENABLE_DTMF_CALLING:
 #            mem.extra.append(rs)
-
-        # Compander
-        val = RadioSettingValueList(COMPANDER_LIST, None, tmp_comp)
-        rs = RadioSetting("compander", "Compander (Compnd)", val)
-        rs.set_doc('Compnd: Do you want to compand on this frequency?')
-        mem.extra.append(rs)
 
         val = RadioSettingValueList(SCANLIST_LIST, None, tmpscn)
         rs = RadioSetting("scanlists", "Scanlists (SList)", val)
@@ -2272,7 +2267,7 @@ class UVK5RadioEgzumer(chirp_common.CloneModeRadio):
 
 # add menu firmware with version and option display if version 3.0 and up
         ValFirm = "Firmware : " + self.FIRMWARE_VERSION
-        Compair1 = "F4HWN v5.0"
+        Compair1 = "GOGUFW v3.1.1"
 
         if self.FIRMWARE_VERSION == "":
             ValFirm = "Firmware : Only when read from the radio "
@@ -2287,7 +2282,7 @@ class UVK5RadioEgzumer(chirp_common.CloneModeRadio):
         val = RadioSettingValueBoolean(False)
         def validate_Go_Web_Firmware(value):
             if value :
-                msg = "To see information for the update of the Firmware F4HWN \n"
+                msg = "To see information for the update of GOGUFW firmware \n"
                 ret = wx.MessageBox(msg, "Warning", wx.OK | wx.CANCEL |
                                     wx.CANCEL_DEFAULT | wx.ICON_WARNING)
                 if ret == wx.OK :
@@ -2297,8 +2292,8 @@ class UVK5RadioEgzumer(chirp_common.CloneModeRadio):
             return value
 
         val.set_validate_callback(validate_Go_Web_Firmware)
-        rs = RadioSetting("Update_Firmware_mise_a_jour","To see information for the update of the Firmware F4HWN , select this box ->", val)
-        rs.set_doc('To see information for the update of the Firmware F4HWN !')
+        rs = RadioSetting("Update_Firmware_mise_a_jour","To see information for the GOGUFW firmware update, select this box ->", val)
+        rs.set_doc('Open the GOGUFW firmware release page.')
         radio_firmware.append(rs)
 
 # end add link for mise a jour information
@@ -2853,7 +2848,7 @@ class UVK5RadioEgzumer(chirp_common.CloneModeRadio):
         val = RadioSettingValueList(TALK_TIME_LIST, None, tmptot)
         tx_t_out_setting = RadioSetting("tot", "Max TX Timeout (TxTOut)", val)
         tx_t_out_setting.set_doc('TxTOut: Select the TX time limit\n' + \
-                                 'See option (SetTot) of F4HWN')
+                                 'See option (SetTot) of GOGUFW')
 
         tmpbatsave = list_def(_mem.battery_save, BATSAVE_LIST, 5)
         val = RadioSettingValueList(BATSAVE_LIST, None, tmpbatsave)
@@ -3141,15 +3136,13 @@ class UVK5RadioEgzumer(chirp_common.CloneModeRadio):
         val = RadioSettingValueList(GGFW_CALL_VOL_LIST, GGFW_CALL_VOL_LIST[int(_mem.ggfw_call_vol)])
         ggfw.append(RadioSetting("ggfw_call_vol", "CllVol", val))
 
+        val = RadioSettingValueList(GGFW_MSG_OFF_ON_LIST, GGFW_MSG_OFF_ON_LIST[int(_mem.ggfw_rng_rsp)])
+        ggfw.append(RadioSetting("ggfw_rng_rsp", "RngRsp", val))
+
         current_callsign = _ggfw_char_from_slot(_mem.ggfw_msg_callsign)
         val = RadioSettingValueString(0, 6, current_callsign)
         val.set_charset(GGFW_CALLSIGN_CHARS)
-        callsign_setting = RadioSetting("ggfw_msg_callsign", "CllSgn", val)
-        callsign_setting.set_doc('Shared station callsign used by Messenger and, when valid for AX.25, by APRS TX and Beacon. Enter the base callsign only; APRS TX adds its SSID separately.')
-        ggfw.append(callsign_setting)
-
-        val = RadioSettingValueList(GGFW_MSG_OFF_ON_LIST, GGFW_MSG_OFF_ON_LIST[int(_mem.ggfw_rng_rsp)])
-        ggfw.append(RadioSetting("ggfw_rng_rsp", "RngRsp", val))
+        ggfw.append(RadioSetting("ggfw_msg_callsign", "Callsign", val))
 
         for j in range(0, 8):
             current_draft = _ggfw_char_from_slot(_mem.ggfw_msg_draft[j].text)
@@ -3186,7 +3179,7 @@ class UVK5RadioEgzumer(chirp_common.CloneModeRadio):
             firmware = self.FIRMWARE_VERSION
 
         append_label(roinfo,
-                     "=" * 6 + " Firmware F4HWN " + "=" * 300, "=" * 300)
+                     "=" * 6 + " GOGUFW Firmware " + "=" * 300, "=" * 300)
 
         append_label(roinfo, "Firmware Version", firmware)
 
@@ -3195,7 +3188,7 @@ class UVK5RadioEgzumer(chirp_common.CloneModeRadio):
         val = RadioSettingValueBoolean(False)
         def validate_Go_Web_Page0(value):
             if value :
-                msg = "Go to the web Page of the Firmware F4HWN \n" \
+                msg = "Go to the GOGUFW firmware release page \n" \
                       + FIRMWARE_VERSION_UPDATE
                 ret = wx.MessageBox(msg, "Warning", wx.OK | wx.CANCEL |
                                     wx.CANCEL_DEFAULT | wx.ICON_WARNING)
@@ -3206,7 +3199,7 @@ class UVK5RadioEgzumer(chirp_common.CloneModeRadio):
             return value
 
         val.set_validate_callback(validate_Go_Web_Page0)
-        rs = RadioSetting("Update_Firmware_0","Go to the web page of Latest Firmware F4HWN select this Box ->", val)
+        rs = RadioSetting("Update_Firmware_0","Open the latest GOGUFW firmware release page ->", val)
         rs.set_doc('Be sure you have the latest firmware available!')
         roinfo.append(rs)
 
@@ -3214,11 +3207,11 @@ class UVK5RadioEgzumer(chirp_common.CloneModeRadio):
         rs = RadioSetting("Update_Firmware_1","Or copy this link (CTRL-C), paste (CTRL-V) to your browser -> ", val)
         rs.set_doc('Be sure you have the latest firmware available!')
         roinfo.append(rs)
-        append_label(roinfo, "The Firmware is done by F4HWN","")
+        append_label(roinfo, "GOGUFW firmware by Gogu-Qs","")
         append_label(roinfo,"","")
 
         append_label(roinfo,
-                     "=" * 6 + " Chirp Driver F4HWN " + "=" * 300, "=" * 300)
+                     "=" * 6 + " GOGUFW CHIRP Driver " + "=" * 300, "=" * 300)
 
         append_label(roinfo, "Driver Chirp Version         ", DRIVER_VERSION)
 
@@ -3227,7 +3220,7 @@ class UVK5RadioEgzumer(chirp_common.CloneModeRadio):
         val = RadioSettingValueBoolean(False)
         def validate_Go_Web_Page(value):
             if value :
-                msg = "Go to the web Page of the Chirp Driver F4HWN \n" \
+                msg = "Go to the GOGUFW CHIRP driver release page \n" \
                       + CHIRP_DRIVER_VERSION_UPDATE
                 ret = wx.MessageBox(msg, "Warning", wx.OK | wx.CANCEL |
                                     wx.CANCEL_DEFAULT | wx.ICON_WARNING)
@@ -3238,7 +3231,7 @@ class UVK5RadioEgzumer(chirp_common.CloneModeRadio):
             return value
 
         val.set_validate_callback(validate_Go_Web_Page)
-        rs = RadioSetting("Update_Driver_Chirp_0","Go to the web page of Latest chirp Driver F4HWN select this Box ->", val)
+        rs = RadioSetting("Update_Driver_Chirp_0","Open the latest GOGUFW CHIRP driver release page ->", val)
         rs.set_doc('Be sure you have the latest CHIRP driver available!')
         roinfo.append(rs)
 
@@ -3247,7 +3240,7 @@ class UVK5RadioEgzumer(chirp_common.CloneModeRadio):
         rs.set_doc('Be sure you have the latest CHIRP driver available!')
         roinfo.append(rs)
 
-        append_label(roinfo, "The driver module is done by VE2ZJM & F4HWN")
+        append_label(roinfo, "GOGUFW CHIRP driver module")
         append_label(roinfo,"","" )
 
         # ----------------- Calibration
@@ -3613,7 +3606,7 @@ class UVK5RadioEgzumer(chirp_common.CloneModeRadio):
 
         # -------- LAYOUT
         append_label(basic,
-                     "=" * 6 + " Start of F4HWN Settings." + "=" * 300, "=" * 300)
+                     "=" * 6 + " Start of GOGUFW Settings." + "=" * 300, "=" * 300)
         basic.append(SetPwrSetting)
         basic.append(SetPttSetting)
         basic.append(SetTotSetting)
@@ -3635,7 +3628,7 @@ class UVK5RadioEgzumer(chirp_common.CloneModeRadio):
             basic.append(SetMenuLockSetting)
 
         append_label(basic,
-                     "=" * 6 + " End of F4HWN settings " + "=" * 300, "=" * 300)
+                     "=" * 6 + " End of GOGUFW settings " + "=" * 300, "=" * 300)
 
         append_label(basic,
                      "=" * 6 + " General settings " + "=" * 300, "=" * 300)
@@ -3745,9 +3738,13 @@ class UVK5RadioEgzumer(chirp_common.CloneModeRadio):
 
         _mem_attr = self._memobj.ch_attr[att_num]
 
-        # Initialize scanlist fields (new 5-bit field and old 1-bit flags)
+        # Initialize the visible scan-list field. Preserve the hidden legacy
+        # compander bits on existing channels, but clear them when reviving a
+        # deleted/erased slot so the removed feature cannot turn on by chance.
+        attr_was_empty = int(_mem_attr.band) > 6
         _mem_attr.scanlist = 0
-        _mem_attr.compander = 0
+        if attr_was_empty:
+            _mem_attr.compander = 0
 
         # empty memory
         if memory.empty:
@@ -3829,12 +3826,14 @@ class UVK5RadioEgzumer(chirp_common.CloneModeRadio):
         _mem_chan.txLock = get_setting("txLock", 0)
         _mem_chan.noFskTx = get_setting("noFskTx", False)
         _mem_chan.noRoger = get_setting("noRoger", False)
-        _mem_chan.__UNUSED_SCRAMBLER = 0
+        # Do not use a double-underscore bitwise field here: Python name
+        # mangling turns it into _UVK5RadioEgzumer__..., which the CHIRP
+        # bitwise object does not contain and every edit then fails.
+        _mem_chan.unused_scrambler = 0
         _mem_chan.busyChLockout = get_setting("busyChLockout", False)
         _mem_chan.dtmf_pttid = get_setting("pttid", 0)
         _mem_chan.freq_reverse = get_setting("frev", False)
         _mem_chan.dtmf_decode = get_setting("dtmfdecode", False)
-        _mem_attr.compander = get_setting("compander", 0)
         if number < MR_CHANNELS_MAX:
             tmp_val = get_setting("scanlists", 0)
             _mem_attr.scanlist = tmp_val

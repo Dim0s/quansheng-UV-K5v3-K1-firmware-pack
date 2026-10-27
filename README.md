@@ -61,7 +61,6 @@ ___
 2. [GOGU](https://github.com/Dim0s/quansheng-UV-K5v3-K1-firmware-pack/tree/main/GOGU)
 3. [IOTCU](https://github.com/Dim0s/quansheng-UV-K5v3-K1-firmware-pack/tree/main/IOTCU)
 4. [N7SIX](https://github.com/Dim0s/quansheng-UV-K5v3-K1-firmware-pack/tree/main/N7SIX)
-5. [SONIC](https://github.com/Robby69400/Sonic) - умеет 4к каналов, сделана на базе старой KA52, сыроватая, пока не в репе
 
 ### прошивки поддерживающие Приложения от Armel
 1. [GOGU](https://github.com/Dim0s/quansheng-UV-K5v3-K1-firmware-pack/tree/main/GOGU)

@@ -35,7 +35,7 @@ ___
 1. [GOGU](https://github.com/Dim0s/quansheng-UV-K5v3-K1-firmware-pack/tree/main/GOGU) - удобный, простой, быстрый, FSK, ACK, сделано на базе F4HWN
 2. [PrepperRadio](https://github.com/Dim0s/quansheng-UV-K5v3-K1-firmware-pack/tree/main/PrepperRadio) - чуть сложней, отзывчивость прошивки медленновата, FSK 1.2 / FSK .6 / FSK 2.4 / FFSK 1.2, ACK, избирательная отправка по книжке контактов, шифрование (не проверено), возможность отправлять сообщения с компа на клавиатре (крайне удобно)
 3. [FALCON](https://github.com/Dim0s/quansheng-UV-K5v3-K1-firmware-pack/tree/main/FALCON) - только с установкой определённых приложений
-4. [F4HWN](https://github.com/Dim0s/quansheng-UV-K5v3-K1-firmware-pack/tree/main/F4HWN) - только в издании Labs и с установкой определённых приложений
+4. [F4HWN](https://github.com/Dim0s/quansheng-UV-K5v3-K1-firmware-pack/tree/main/F4HWN) - только в издании Labs и с установкой определённых приложений от FALCON
 5. [IJV](https://github.com/Dim0s/quansheng-UV-K5v3-K1-firmware-pack/tree/main/IJV) - в платной версии есть какой то мессенджер, сам не тестил
 
 ### прошивки с поддержкой модуля SI4732:

@@ -22,6 +22,12 @@ ___
 
 ___
 
+<h4 align="center">поддержать можно на карту юмани, урал:</h4>
+
+<h3 align="center">5599 0050 9848 7759</h3>
+
+___
+
 ### прошивки с лучшим спектроанализатором:
 1. [Karina](https://github.com/Dim0s/quansheng-UV-K5v3-K1-firmware-pack/tree/main/Karina) - самый быстрый, сканирует по диапазону частот или сразу несколько бендов
 2. [KA50](https://github.com/Dim0s/quansheng-UV-K5v3-K1-firmware-pack/tree/main/KA50) / [KA52](https://github.com/Dim0s/quansheng-UV-K5v3-K1-firmware-pack/tree/main/KA52) / [KA52M](https://github.com/Dim0s/quansheng-UV-K5v3-K1-firmware-pack/tree/main/KA52M) - быстрый, сканирует по диапазону частот, по каналам, сразу несколько бендов

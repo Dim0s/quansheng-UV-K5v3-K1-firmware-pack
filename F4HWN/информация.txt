@@ -108,7 +108,7 @@ https://github.com/armel/uv-k1-k5v3-firmware-custom/tree/main/archive/apps
 https://github.com/armel/uv-k1-k5v3-firmware-custom/wiki/Overlay-applications
 а так же описание и скриншоты есть в самой UV Studio
 -----------------------------------------------------------------------------------------
-прямая ссылка на сторонние приложения:
+прямая ссылка на сторонние приложения от комьюнити:
 https://github.com/armel/fusion-community/tree/main/apps
 описание и скриншоты есть в самой UV Studio
 _________________________________________________________________________________________

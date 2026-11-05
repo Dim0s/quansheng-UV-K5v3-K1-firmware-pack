@@ -69,3 +69,5 @@ https://github.com/armel/uv-k1-k5v3-firmware-custom/wiki/Overlay-applications
 https://github.com/armel/fusion-community/tree/main/apps
 описание и скриншоты есть в самой UV Studio
 _________________________________________________________________________________________
+репозиторий автора:
+https://github.com/P-E-lab/Falcon-firmware-UV-K1-K5v3

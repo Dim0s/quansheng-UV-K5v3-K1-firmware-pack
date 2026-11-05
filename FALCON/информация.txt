@@ -71,3 +71,6 @@ https://github.com/armel/fusion-community/tree/main/apps
 _________________________________________________________________________________________
 репозиторий автора:
 https://github.com/P-E-lab/Falcon-firmware-UV-K1-K5v3
+
+телеграмм автора:
+https://t.me/SonicFw

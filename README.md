@@ -36,7 +36,7 @@ ___
 2. [PrepperRadio](https://github.com/Dim0s/quansheng-UV-K5v3-K1-firmware-pack/tree/main/PrepperRadio) - чуть сложней, отзывчивость прошивки медленновата, FSK 1.2 / FSK .6 / FSK 2.4 / FFSK 1.2, ACK, избирательная отправка по книжке контактов, шифрование (не проверено), возможность отправлять сообщения с компа на клавиатре (крайне удобно)
 3. [FALCON](https://github.com/Dim0s/quansheng-UV-K5v3-K1-firmware-pack/tree/main/FALCON) - только с установкой определённых приложений
 4. [F4HWN](https://github.com/Dim0s/quansheng-UV-K5v3-K1-firmware-pack/tree/main/F4HWN) - только в издании Labs и с установкой определённых приложений от FALCON
-5. [NR7Y](https://github.com/Dim0s/quansheng-UV-K5v3-K1-firmware-pack/tree/main/NR7Y) - только с установкой определённых приложений
+5. [Brass](https://github.com/Dim0s/quansheng-UV-K5v3-K1-firmware-pack/tree/main/Brass) - только с установкой определённых приложений
 6. [IJV](https://github.com/Dim0s/quansheng-UV-K5v3-K1-firmware-pack/tree/main/IJV) - в платной версии есть какой то мессенджер, сам не тестил
 
 ### прошивки с поддержкой модуля SI4732:
@@ -44,7 +44,7 @@ ___
 2. [IJV](https://github.com/Dim0s/quansheng-UV-K5v3-K1-firmware-pack/tree/main/IJV) - только в платной версии
 
 ### прошивки с CW морзянкой
-1. [NR7Y](https://github.com/Dim0s/quansheng-UV-K5v3-K1-firmware-pack/tree/main/NR7Y) - декодирование только отправляемых символов, поддерживает подключение внешних ямбических CW манипуляторов в USBc, сделано на базе F4HWN
+1. [Brass](https://github.com/Dim0s/quansheng-UV-K5v3-K1-firmware-pack/tree/main/Brass) - декодирование только отправляемых символов, поддерживает подключение внешних ямбических CW манипуляторов в USBc, сделано на базе F4HWN
 2. [E25WOP](https://github.com/Dim0s/quansheng-UV-K5v3-K1-firmware-pack/tree/main/E25WOP) - декодирование на рации, поддерживает подключение внешних ямбических CW манипуляторов в USBc, сделано на базе F4HWN
 3. [FALCON](https://github.com/Dim0s/quansheng-UV-K5v3-K1-firmware-pack/tree/main/FALCON) - только с установкой определённых приложений, декодирование на рации, поддерживает подключение внешних ямбических CW манипуляторов в USBc
 4. [GOGU](https://github.com/Dim0s/quansheng-UV-K5v3-K1-firmware-pack/tree/main/GOGU) - только с установкой определённых приложений, декодирование на рации, поддерживает подключение внешних ямбических CW манипуляторов в USBc
@@ -67,13 +67,13 @@ ___
 3. [IOTCU](https://github.com/Dim0s/quansheng-UV-K5v3-K1-firmware-pack/tree/main/IOTCU)
 4. [N7SIX](https://github.com/Dim0s/quansheng-UV-K5v3-K1-firmware-pack/tree/main/N7SIX)
 5. [FALCON](https://github.com/Dim0s/quansheng-UV-K5v3-K1-firmware-pack/tree/main/FALCON)
-6. [NR7Y](https://github.com/Dim0s/quansheng-UV-K5v3-K1-firmware-pack/tree/main/NR7Y)
+6. [Brass](https://github.com/Dim0s/quansheng-UV-K5v3-K1-firmware-pack/tree/main/Brass)
 
 ### прошивки поддерживающие Приложения от Armel
 1. [F4HWN](https://github.com/Dim0s/quansheng-UV-K5v3-K1-firmware-pack/tree/main/F4HWN) - только в издании Labs
 2. [GOGU](https://github.com/Dim0s/quansheng-UV-K5v3-K1-firmware-pack/tree/main/GOGU)
 3. [FALCON](https://github.com/Dim0s/quansheng-UV-K5v3-K1-firmware-pack/tree/main/FALCON)
-4. [NR7Y](https://github.com/Dim0s/quansheng-UV-K5v3-K1-firmware-pack/tree/main/NR7Y)
+4. [Brass](https://github.com/Dim0s/quansheng-UV-K5v3-K1-firmware-pack/tree/main/Brass)
 
 ___
 

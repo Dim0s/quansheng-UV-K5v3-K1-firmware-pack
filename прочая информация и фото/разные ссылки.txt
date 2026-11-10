@@ -23,6 +23,14 @@ https://f-droid.org/ru/packages/om.sstvencoder/
 DroidRTTY for Ham Radio
 радиолюбительский радиотелетайп / radioteletype, это один из старейших цифровых видов связи, позволяющий передавать текстовые сообщения
 https://apkpure.net/ru/droidrtty-for-ham-radio/com.wolphi.droidrtty/download?
+
+SatView
+просмотр местонахождения SATCOM спутников, их частот и другое
+https://satview.ru/apk/SatView.apk
+
+Look4Sat
+просмотр местонахождения разных спутников, их частот и другое
+https://github.com/rt-bishop/Look4Sat/releases
 _____________________________________________________________________________________
 3D модели:
 https://www.printables.com/search/models?ctx=models&q=Quansheng

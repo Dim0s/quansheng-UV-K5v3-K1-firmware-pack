@@ -1,0 +1,24 @@
+APRSdroid:
+для передачи GPS координат и чата через рацию, можно через микрофон и динамик но круче спаять провод и воткнуть в гнездо для наушников телефона и в рацию,
+не забываем про отсутствие конденсатора у рации на выходе для "наушника", на выход пойдёт постоянка что вредно для телефона, обязательно допаивайте кондёр
+https://aprsdroid.org/download/
+
+Robot36
+SSTV декодер, только приём изображений
+https://4pda.to/forum/index.php?showtopic=1098554
+
+SSTV Encoder
+SSTV кодировщик, только отправка изображений
+https://f-droid.org/ru/packages/om.sstvencoder/
+
+DroidRTTY for Ham Radio
+радиолюбительский радиотелетайп / radioteletype, это один из старейших цифровых видов связи, позволяющий передавать текстовые сообщения
+https://apkpure.net/ru/droidrtty-for-ham-radio/com.wolphi.droidrtty/download?
+
+SatView
+просмотр местонахождения SATCOM спутников, их частот и другое
+https://satview.ru/apk/SatView.apk
+
+Look4Sat
+просмотр местонахождения разных спутников, их частот и другое
+https://github.com/rt-bishop/Look4Sat/releases

@@ -2,8 +2,24 @@
 с демпферной смазкой (плавный ход как в ориге), серебристый шток: https://www.ozon.ru/product/regulyator-gromkosti-dlya-ratsiy-baofeng-uv-5r-uv-82-bf-888s-1865169352
 без демпферной смазки, латунный шток: https://www.ozon.ru/product/pereklyuchatel-gromkosti-a103-dlya-radiostantsii-4565191387
 _____________________________________________________________________________________
-APRS приложение на смартфон:
+приложения на смартфон:
+
+APRSdroid:
+для передачи GPS координат и чата через рацию, можно через микрофон и динамик но круче спаять провод и воткнуть в гнездо для наушников телефона и в рацию,
+не забываем про отсутствие конденсатора у рации на выходе для "наушника", на выход пойдёт постоянка что вредно для телефона, обязательно допаивайте кондёр
 https://aprsdroid.org/download/
+
+Robot36
+SSTV декодер, только приём изображений
+https://4pda.to/forum/index.php?showtopic=1098554
+
+SSTV Encoder
+SSTV кодировщик, только отправка изображений
+https://f-droid.org/ru/packages/om.sstvencoder/
+
+DroidRTTY for Ham Radio
+радиолюбительский радиотелетайп / radioteletype, это один из старейших цифровых видов связи, позволяющий передавать текстовые сообщения
+https://apkpure.net/ru/droidrtty-for-ham-radio/com.wolphi.droidrtty/download?
 _____________________________________________________________________________________
 3D модели:
 https://www.printables.com/search/models?ctx=models&q=Quansheng

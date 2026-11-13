@@ -74,6 +74,7 @@ ___
 2. [GOGU](https://github.com/Dim0s/quansheng-UV-K5v3-K1-firmware-pack/tree/main/GOGU)
 3. [FALCON](https://github.com/Dim0s/quansheng-UV-K5v3-K1-firmware-pack/tree/main/FALCON)
 4. [Brass](https://github.com/Dim0s/quansheng-UV-K5v3-K1-firmware-pack/tree/main/Brass)
+5. [N7SIX](https://github.com/Dim0s/quansheng-UV-K5v3-K1-firmware-pack/tree/main/N7SIX)
 
 ___
 

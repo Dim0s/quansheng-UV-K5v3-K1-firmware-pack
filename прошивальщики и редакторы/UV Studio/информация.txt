@@ -44,7 +44,7 @@ https://ko4cgq.github.io/uvstudio-plus/
 репозиторий:
 https://github.com/KO4CGQ/uvstudio-plus
 _________________________________________________________________________________________________________
-UV Studio Mobile - версия студии от Armel для смартфона
+UV Studio Mobile - версия студии от Armel для смартфона, подключать только через "OTG" переходник и сразу в рацию (USB-A to USB-C), через провод "kenwood" не работает
 
 репозиторий автора:
 https://github.com/SmartReFleX/UV-Studio-Mobile/releases

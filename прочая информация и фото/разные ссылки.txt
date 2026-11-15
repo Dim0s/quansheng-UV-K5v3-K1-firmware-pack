@@ -1,3 +1,6 @@
+UV Studio от Armel для смартфона
+https://github.com/SmartReFleX/UV-Studio-Mobile/releases
+_____________________________________________________________________________________
 подходящие регуляторы громкости для раций:
 с демпферной смазкой (плавный ход как в ориге), серебристый шток:
 https://www.ozon.ru/product/regulyator-gromkosti-dlya-ratsiy-baofeng-uv-5r-uv-82-bf-888s-1865169352

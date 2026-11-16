@@ -32,7 +32,7 @@ ___
 7. [F4HWN](https://github.com/Dim0s/quansheng-UV-K5v3-K1-firmware-pack/tree/main/F4HWN) - скорость средняя, сканирует по диапазону частот, бендов нет
 
 ### прошивки с мессенджером:
-1. [GOGU](https://github.com/Dim0s/quansheng-UV-K5v3-K1-firmware-pack/tree/main/GOGU) - удобный, простой, быстрый, FSK, ACK, сделано на базе F4HWN
+1. [GOGU](https://github.com/Dim0s/quansheng-UV-K5v3-K1-firmware-pack/tree/main/GOGU) - удобный, простой, быстрый, FSK, ACK
 2. [PrepperRadio](https://github.com/Dim0s/quansheng-UV-K5v3-K1-firmware-pack/tree/main/PrepperRadio) - чуть сложней, отзывчивость прошивки медленновата, FSK 1.2 / FSK .6 / FSK 2.4 / FFSK 1.2, ACK, избирательная отправка по книжке контактов, шифрование (не проверено), возможность отправлять сообщения с компа на клавиатре (крайне удобно)
 3. [FALCON](https://github.com/Dim0s/quansheng-UV-K5v3-K1-firmware-pack/tree/main/FALCON) - только с установкой определённых приложений
 4. [F4HWN](https://github.com/Dim0s/quansheng-UV-K5v3-K1-firmware-pack/tree/main/F4HWN) - только в издании Labs и с установкой определённых приложений
@@ -40,26 +40,30 @@ ___
 6. [IJV](https://github.com/Dim0s/quansheng-UV-K5v3-K1-firmware-pack/tree/main/IJV) - в платной версии есть какой то мессенджер, сам не тестил
 
 ### прошивки с поддержкой модуля SI4732:
-1. [IOTCU](https://github.com/Dim0s/quansheng-UV-K5v3-K1-firmware-pack/tree/main/IOTCU) - сделано на базе F4HWN
-2. [IJV](https://github.com/Dim0s/quansheng-UV-K5v3-K1-firmware-pack/tree/main/IJV) - только в платной версии
+1. [IOTCU](https://github.com/Dim0s/quansheng-UV-K5v3-K1-firmware-pack/tree/main/IOTCU)
+2. [F4HWN](https://github.com/Dim0s/quansheng-UV-K5v3-K1-firmware-pack/tree/main/F4HWN) - только в издании Labs и с установкой определённых приложений
+3. [GOGU](https://github.com/Dim0s/quansheng-UV-K5v3-K1-firmware-pack/tree/main/GOGU) - только с установкой определённых приложений
+4. [FALCON](https://github.com/Dim0s/quansheng-UV-K5v3-K1-firmware-pack/tree/main/FALCON) - только с установкой определённых приложений
+5. [Brass](https://github.com/Dim0s/quansheng-UV-K5v3-K1-firmware-pack/tree/main/Brass) - только с установкой определённых приложений
+6. [IJV](https://github.com/Dim0s/quansheng-UV-K5v3-K1-firmware-pack/tree/main/IJV) - только в платной версии
 
 ### прошивки с CW морзянкой
-1. [Brass](https://github.com/Dim0s/quansheng-UV-K5v3-K1-firmware-pack/tree/main/Brass) - декодирование только отправляемых символов, поддерживает подключение внешних ямбических CW манипуляторов в USBc, сделано на базе F4HWN
-2. [E25WOP](https://github.com/Dim0s/quansheng-UV-K5v3-K1-firmware-pack/tree/main/E25WOP) - декодирование на рации, поддерживает подключение внешних ямбических CW манипуляторов в USBc, сделано на базе F4HWN
+1. [Brass](https://github.com/Dim0s/quansheng-UV-K5v3-K1-firmware-pack/tree/main/Brass) - декодирование только отправляемых символов, поддерживает подключение внешних ямбических CW манипуляторов в USBc
+2. [E25WOP](https://github.com/Dim0s/quansheng-UV-K5v3-K1-firmware-pack/tree/main/E25WOP) - декодирование на рации, поддерживает подключение внешних ямбических CW манипуляторов в USBc
 3. [FALCON](https://github.com/Dim0s/quansheng-UV-K5v3-K1-firmware-pack/tree/main/FALCON) - только с установкой определённых приложений, декодирование на рации, поддерживает подключение внешних ямбических CW манипуляторов в USBc
 4. [GOGU](https://github.com/Dim0s/quansheng-UV-K5v3-K1-firmware-pack/tree/main/GOGU) - только с установкой определённых приложений, декодирование на рации, поддерживает подключение внешних ямбических CW манипуляторов в USBc
 5. [F4HWN](https://github.com/Dim0s/quansheng-UV-K5v3-K1-firmware-pack/tree/main/F4HWN) - только в издании Labs и с установкой определённых приложений, декодирование на рации, поддерживает подключение внешних ямбических CW манипуляторов в USBc
 6. [KA52M](https://github.com/Dim0s/quansheng-UV-K5v3-K1-firmware-pack/tree/main/KA52M) - декодирование только через приложение UV AIR DROID или любые другие сторонние, в рации можно набрать текст буквами и она сама закодирует его в морзянку, или самому набивать морзянку кнопкой PTT
-7. [N7SIX](https://github.com/Dim0s/quansheng-UV-K5v3-K1-firmware-pack/tree/main/N7SIX) - декодирование на рации, можно набрать текст буквами и рация сама закодирует его в морзянку, сделано на базе F4HWN
-8. [Delta](https://github.com/Dim0s/quansheng-UV-K5v3-K1-firmware-pack/tree/main/Delta) - декодирование только отправляемых символов, сделано на базе F4HWN
+7. [N7SIX](https://github.com/Dim0s/quansheng-UV-K5v3-K1-firmware-pack/tree/main/N7SIX) - декодирование на рации, можно набрать текст буквами и рация сама закодирует его в морзянку
+8. [Delta](https://github.com/Dim0s/quansheng-UV-K5v3-K1-firmware-pack/tree/main/Delta) - декодирование только отправляемых символов
 
 ### прошивки с поддержкой 3 VFO
 1. [KA52M](https://github.com/Dim0s/quansheng-UV-K5v3-K1-firmware-pack/tree/main/KA52M/3%20VFO) - умеет переключаться между двумя тройными VFO, и того 6 VFO
-2. [BD1AHN](https://github.com/Dim0s/quansheng-UV-K5v3-K1-firmware-pack/tree/main/BD1AHN) - сделано на базе F4HWN
+2. [BD1AHN](https://github.com/Dim0s/quansheng-UV-K5v3-K1-firmware-pack/tree/main/BD1AHN)
 3. [IJV](https://github.com/Dim0s/quansheng-UV-K5v3-K1-firmware-pack/tree/main/IJV) - только в платной версии
 
 ### прошивки с защитой паролем
-1. [Delta](https://github.com/Dim0s/quansheng-UV-K5v3-K1-firmware-pack/tree/main/Delta) - защита паролем при включении рации, шифрование сохранённых каналов алгоритмом ChaCha20, сделано на базе F4HWN
+1. [Delta](https://github.com/Dim0s/quansheng-UV-K5v3-K1-firmware-pack/tree/main/Delta) - защита паролем при включении рации, шифрование сохранённых каналов алгоритмом ChaCha20
 
 ### прошивки поддерживающие Мультизагрузку от Armel
 1. [F4HWN](https://github.com/Dim0s/quansheng-UV-K5v3-K1-firmware-pack/tree/main/F4HWN)

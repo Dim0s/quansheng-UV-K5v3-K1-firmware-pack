@@ -37,7 +37,8 @@ ___
 3. [FALCON](https://github.com/Dim0s/quansheng-UV-K5v3-K1-firmware-pack/tree/main/FALCON) - только с установкой определённых приложений
 4. [F4HWN](https://github.com/Dim0s/quansheng-UV-K5v3-K1-firmware-pack/tree/main/F4HWN) - только в издании Labs и с установкой определённых приложений
 5. [Brass](https://github.com/Dim0s/quansheng-UV-K5v3-K1-firmware-pack/tree/main/Brass) - только с установкой определённых приложений
-6. [IJV](https://github.com/Dim0s/quansheng-UV-K5v3-K1-firmware-pack/tree/main/IJV) - в платной версии есть какой то мессенджер, сам не тестил
+6. [N7SIX](https://github.com/Dim0s/quansheng-UV-K5v3-K1-firmware-pack/tree/main/N7SIX) - только с установкой определённых приложений
+7. [IJV](https://github.com/Dim0s/quansheng-UV-K5v3-K1-firmware-pack/tree/main/IJV) - в платной версии есть какой то мессенджер, сам не тестил
 
 ### прошивки с поддержкой модуля SI4732:
 1. [IOTCU](https://github.com/Dim0s/quansheng-UV-K5v3-K1-firmware-pack/tree/main/IOTCU)
@@ -45,7 +46,8 @@ ___
 3. [FALCON](https://github.com/Dim0s/quansheng-UV-K5v3-K1-firmware-pack/tree/main/FALCON) - только с установкой определённых приложений
 4. [GOGU](https://github.com/Dim0s/quansheng-UV-K5v3-K1-firmware-pack/tree/main/GOGU) - только с установкой определённых приложений
 5. [Brass](https://github.com/Dim0s/quansheng-UV-K5v3-K1-firmware-pack/tree/main/Brass) - только с установкой определённых приложений
-6. [IJV](https://github.com/Dim0s/quansheng-UV-K5v3-K1-firmware-pack/tree/main/IJV) - только в платной версии
+6. [N7SIX](https://github.com/Dim0s/quansheng-UV-K5v3-K1-firmware-pack/tree/main/N7SIX) - только с установкой определённых приложений
+7. [IJV](https://github.com/Dim0s/quansheng-UV-K5v3-K1-firmware-pack/tree/main/IJV) - только в платной версии
 
 ### прошивки с CW морзянкой
 1. [Brass](https://github.com/Dim0s/quansheng-UV-K5v3-K1-firmware-pack/tree/main/Brass) - декодирование только отправляемых символов, поддерживает подключение внешних ямбических CW манипуляторов в USBc
